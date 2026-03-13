@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KI Agentur Norderstedt – Wir beraten kleine Betriebe in der Region Hamburg dabei, digitale Prozesse mit Künstlicher Intelligenz zu optimieren. Persönlich, verständlich, wirksam." />
+  <title>KI Agentur Norderstedt – KI-Beratung für kleine Betriebe</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Spline 3D Viewer Web Component -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <header>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <div class="container nav__inner">
+
+        <a href="#" class="nav__logo" aria-label="KI Agentur Norderstedt – Startseite">
+          <span class="nav__logo-top">KI Agentur</span>
+          <span class="nav__logo-bottom">Norderstedt</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="#leistungen" class="nav__link">Leistungen</a></li>
+          <li><a href="#prozess"    class="nav__link">Prozess</a></li>
+          <li><a href="#ueber-uns" class="nav__link">Über uns</a></li>
+          <li><a href="#kontakt"   class="nav__link">Kontakt</a></li>
+        </ul>
+
+        <a href="#kontakt" class="nav__cta">Gespräch vereinbaren →</a>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="nav__overlay" id="nav-overlay" aria-hidden="true">
+      <a href="#leistungen" class="nav__overlay-link">Leistungen</a>
+      <a href="#prozess"    class="nav__overlay-link">Prozess</a>
+      <a href="#ueber-uns" class="nav__overlay-link">Über uns</a>
+      <a href="#kontakt"   class="nav__overlay-link">Kontakt</a>
+      <a href="#kontakt"   class="nav__overlay-link" style="color: var(--color-accent); font-size: var(--text-xl);">Gespräch vereinbaren →</a>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Einleitung">
+
+    <!-- Spotlight SVG (Aceternity-Style) -->
+    <svg
+      class="hero__spotlight"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 3787 2842"
+      fill="none"
+    >
+      <g filter="url(#hero-spotlight-filter)">
+        <ellipse
+          cx="1924.71" cy="273.501"
+          rx="1924.71" ry="273.501"
+          transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
+          fill="white"
+          fill-opacity="0.18"
+        />
+      </g>
+      <defs>
+        <filter id="hero-spotlight-filter"
+          x="0.860352" y="0.838989"
+          width="3785.16" height="2840.26"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="151" result="effect1_foregroundBlur"/>
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- Cursor-Spotlight -->
+    <div class="hero__cursor-spotlight" id="hero-cursor-spotlight" aria-hidden="true"></div>
+
+    <!-- Floating Shapes (21st.dev style) -->
+    <div class="hero__shapes" aria-hidden="true">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+      <div class="hero__shape hero__shape--4"></div>
+    </div>
+
+    <div class="hero__content">
+      <!-- Badge / Pill -->
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        <span>KI-Beratung für den Mittelstand</span>
+      </div>
+
+      <h1 class="hero__headline hero__headline--gradient" id="hero-headline">
+        Ihr Betrieb.<br>
+        <span class="hero__accent-word">Smarter</span> gemacht.
+      </h1>
+
+      <p class="hero__body">
+        Wir übersetzen KI in einfache, wirksame Lösungen –
+        speziell für kleine Unternehmen in der Region Hamburg.
+        Kein Tech-Jargon. Nur echte Ergebnisse.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#kontakt" class="btn-primary">
+          Kostenloses Erstgespräch
+          <span class="arrow">→</span>
+        </a>
+        <a href="#leistungen" class="btn-secondary">
+          Unsere Leistungen ansehen ↓
+        </a>
+      </div>
+    </div>
+
+    <!-- Spline 3D Scene -->
+    <div class="hero__spline-wrap" aria-hidden="true">
+      <spline-viewer
+        url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+        class="hero__spline"
+      ></spline-viewer>
+    </div>
+
+    <div class="hero__diagonal" aria-hidden="true"></div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="hero__scroll-line">
+        <div class="hero__scroll-dot"></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       LEISTUNGEN
+  ══════════════════════════════════════ -->
+  <section class="leistungen" id="leistungen">
+    <div class="container">
+
+      <header class="leistungen__header">
+        <span class="eyebrow" data-reveal="fade-in">Was wir für Sie tun</span>
+        <h2 class="section-headline" data-reveal="fade-up">Unsere Leistungen</h2>
+      </header>
+
+      <div class="leistungen__grid" data-reveal-stagger>
+
+        <article class="card" data-reveal="fade-up">
+          <span class="card__number" aria-hidden="true">01</span>
+          <h3 class="card__title">KI-Prozess&shy;analyse</h3>
+          <p class="card__body">
+            Wir schauen uns Ihre täglichen Abläufe an und zeigen Ihnen,
+            wo KI Zeit spart und Fehler reduziert – konkret und verständlich.
+          </p>
+          <p class="card__detail">Für Handwerker, Händler und Dienstleister.</p>
+        </article>
+
+        <article class="card" data-reveal="fade-up">
+          <span class="card__number" aria-hidden="true">02</span>
+          <h3 class="card__title">Automatisierung</h3>
+          <p class="card__body">
+            Von Terminbuchung bis Kundenanfragen – wir automatisieren
+            die wiederkehrenden Aufgaben, die Ihre Zeit fressen.
+          </p>
+          <p class="card__detail">Lösungen ohne monatliche Abo-Fallen.</p>
+        </article>
+
+        <article class="card" data-reveal="fade-up">
+          <span class="card__number" aria-hidden="true">03</span>
+          <h3 class="card__title">KI-Einführung &amp; Schulung</h3>
+          <p class="card__body">
+            Wir führen Sie und Ihr Team ein – Schritt für Schritt,
+            verständlich erklärt, ohne Vorkenntnisse.
+          </p>
+          <p class="card__detail">Persönlich. Vor Ort. Nachhaltig.</p>
+        </article>
+
+        <article class="card" data-reveal="fade-up">
+          <span class="card__number" aria-hidden="true">04</span>
+          <h3 class="card__title">Digitale Strategie</h3>
+          <p class="card__body">
+            Welche KI-Tools passen zu Ihrem Betrieb? Wir beraten
+            ehrlich und herstellerneutral – ohne Verkaufsdruck.
+          </p>
+          <p class="card__detail">Keine Provision. Kein Druck.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       WARUM KI?
+  ══════════════════════════════════════ -->
+  <section class="warum" id="warum-ki">
+    <div class="container">
+      <div class="warum__inner">
+
+        <div class="warum__left">
+          <span class="eyebrow" data-reveal="fade-in">Die ehrliche Wahrheit</span>
+          <h2 class="warum__headline" data-reveal="fade-up">
+            KI ist kein Hype.<br>
+            Sie ist ein Werkzeug.
+          </h2>
+          <p class="warum__intro" data-reveal="fade-up">
+            Große Konzerne nutzen KI seit Jahren. Heute ist diese Technologie
+            auch für den Handwerksbetrieb in Norderstedt erschwinglich und
+            wirksam. Wer jetzt anfängt, gewinnt.
+          </p>
+          <blockquote class="warum__closing" data-reveal="slide-right">
+            Wir helfen Ihnen, zu den Vorreitern zu gehören –
+            bevor alle anderen nachziehen.
+          </blockquote>
+        </div>
+
+        <div class="warum__stats" data-reveal-stagger>
+
+          <div class="stat" data-reveal="fade-up">
+            <span class="stat__value" data-count-target="8" data-count-prefix="3–" data-count-suffix=" Std.">3–8 Std.</span>
+            <p class="stat__label">Zeitersparnis pro Woche durch einfache Automatisierung – Zeit, die Sie in Ihr Kerngeschäft investieren.</p>
+          </div>
+
+          <div class="stat" data-reveal="fade-up">
+            <span class="stat__value" data-count-target="73" data-count-suffix=" %">73 %</span>
+            <p class="stat__label">der kleinen und mittleren Betriebe sehen KI als wichtig – aber nur 12 % nutzen sie bereits aktiv.</p>
+          </div>
+
+          <div class="stat" data-reveal="fade-up">
+            <span class="stat__value" data-count-prefix="&lt; " data-count-target="3" data-count-suffix=" Mon.">&lt; 3 Mon.</span>
+            <p class="stat__label">Typische Amortisationszeit für KI-Lösungen in kleinen Betrieben – oft schon im ersten Quartal.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="warum__deco-quote" aria-hidden="true">"</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROZESS
+  ══════════════════════════════════════ -->
+  <section class="prozess" id="prozess">
+    <div class="container">
+
+      <header class="prozess__header">
+        <span class="eyebrow" data-reveal="fade-in">So arbeiten wir</span>
+        <h2 class="section-headline" data-reveal="fade-up">
+          Von der ersten Frage<br>zur fertigen Lösung.
+        </h2>
+      </header>
+
+      <div class="prozess__timeline" id="prozess-timeline">
+
+        <!-- Vertikale Linie -->
+        <div class="prozess__line" aria-hidden="true">
+          <div class="prozess__line-fill" id="prozess-line-fill"></div>
+        </div>
+
+        <!-- Schritt 1 -->
+        <div class="prozess__step" data-reveal="fade-in">
+          <div class="prozess__step-content">
+            <p class="prozess__step-label">01 — Kennenlernen</p>
+            <h3 class="prozess__step-title">Kostenloses Erstgespräch</h3>
+            <p class="prozess__step-body">
+              Wir lernen Ihren Betrieb kennen. Keine Vorbereitung nötig.
+              Kein Verkaufsgespräch. Nur ein offenes Gespräch über Ihre
+              Herausforderungen und Möglichkeiten.
+            </p>
+          </div>
+          <div class="prozess__step-center" aria-hidden="true">
+            <div class="prozess__dot">
+              <div class="prozess__dot-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schritt 2 -->
+        <div class="prozess__step" data-reveal="fade-in">
+          <div class="prozess__step-content">
+            <p class="prozess__step-label">02 — Analyse</p>
+            <h3 class="prozess__step-title">Wir schauen genau hin</h3>
+            <p class="prozess__step-body">
+              Wir analysieren Ihre Abläufe und identifizieren die drei bis
+              fünf Bereiche mit dem höchsten KI-Potenzial – priorisiert
+              nach Aufwand und Nutzen.
+            </p>
+          </div>
+          <div class="prozess__step-center" aria-hidden="true">
+            <div class="prozess__dot">
+              <div class="prozess__dot-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schritt 3 -->
+        <div class="prozess__step" data-reveal="fade-in">
+          <div class="prozess__step-content">
+            <p class="prozess__step-label">03 — Umsetzung</p>
+            <h3 class="prozess__step-title">Konkrete Lösungen</h3>
+            <p class="prozess__step-body">
+              Wir implementieren die vereinbarten Lösungen – verständlich
+              erklärt, von Ihnen abgenommen, sofort einsatzbereit.
+              Kein schwarzer Kasten.
+            </p>
+          </div>
+          <div class="prozess__step-center" aria-hidden="true">
+            <div class="prozess__dot">
+              <div class="prozess__dot-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schritt 4 -->
+        <div class="prozess__step" data-reveal="fade-in">
+          <div class="prozess__step-content">
+            <p class="prozess__step-label">04 — Begleitung</p>
+            <h3 class="prozess__step-title">Wir bleiben dabei</h3>
+            <p class="prozess__step-body">
+              Sie haben immer eine direkte Ansprechperson.
+              Keine Hotline. Kein Ticketsystem. Eine echte Person
+              aus der Region, die Ihren Betrieb kennt.
+            </p>
+          </div>
+          <div class="prozess__step-center" aria-hidden="true">
+            <div class="prozess__dot">
+              <div class="prozess__dot-inner"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       ÜBER UNS
+  ══════════════════════════════════════ -->
+  <section class="about" id="ueber-uns">
+    <div class="container">
+      <div class="about__inner">
+
+        <div class="about__quote-block" data-reveal="slide-right">
+          <span class="about__quote-mark" aria-hidden="true">"</span>
+          <p class="about__quote-text">
+            Endlich jemand, der erklärt,
+            was er tut – und der auch
+            wirklich hilft.
+          </p>
+          <span class="about__quote-source">— Markus H., Inhaber, Sanitärbetrieb Norderstedt</span>
+        </div>
+
+        <div class="about__content">
+          <span class="eyebrow" data-reveal="fade-in">Wer wir sind</span>
+          <h2 class="about__headline" data-reveal="fade-up">
+            Aus der Region.<br>
+            Für die Region.
+          </h2>
+          <p class="about__text" data-reveal="fade-up">
+            KI Agentur Norderstedt wurde gegründet, weil wir gesehen haben,
+            wie viele lokale Betriebe von der digitalen Entwicklung abgehängt
+            werden – nicht weil sie nicht wollen, sondern weil die Angebote
+            zu komplex, zu teuer oder zu weit weg sind.
+          </p>
+          <p class="about__text" data-reveal="fade-up">
+            Wir sind kein Konzern. Wir sitzen in Norderstedt, kennen die
+            Region und sprechen die Sprache unserer Kunden. Wenn etwas
+            nicht funktioniert, sind wir direkt erreichbar – nicht nach
+            drei Werktagen.
+          </p>
+
+          <ul class="about__differentiators" aria-label="Unsere Versprechen">
+            <li class="about__diff-item">
+              <span class="about__diff-arrow" aria-hidden="true">→</span>
+              <span>Kein Outsourcing. Alles aus einer Hand.</span>
+            </li>
+            <li class="about__diff-item">
+              <span class="about__diff-arrow" aria-hidden="true">→</span>
+              <span>Kein Fachjargon. Klare, verständliche Sprache.</span>
+            </li>
+            <li class="about__diff-item">
+              <span class="about__diff-arrow" aria-hidden="true">→</span>
+              <span>Kein Verschwinden nach Projektende.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       KONTAKT
+  ══════════════════════════════════════ -->
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <div class="kontakt__inner">
+
+        <div class="kontakt__left">
+          <span class="eyebrow" data-reveal="fade-in">Jetzt anfangen</span>
+          <h2 class="kontakt__headline" data-reveal="fade-up">
+            Bereit für das<br>Gespräch?
+          </h2>
+          <p class="kontakt__subline" data-reveal="fade-up">
+            Kein Verkaufsdruck. Kein Vortrag.<br>
+            Nur 30 Minuten, die Ihren Betrieb weiterbringen.
+          </p>
+          <p class="kontakt__direct" data-reveal="fade-up">
+            Oder direkt schreiben:<br>
+            <a href="mailto:kontakt@ki-agentur-norderstedt.de">kontakt@ki-agentur-norderstedt.de</a>
+          </p>
+          <div class="kontakt__trust" data-reveal="fade-up">
+            <div class="trust-item">Wir antworten innerhalb von 24 Stunden</div>
+            <div class="trust-item">Ihre Daten werden nicht weitergegeben</div>
+            <div class="trust-item">Erstgespräch ist kostenlos und unverbindlich</div>
+          </div>
+        </div>
+
+        <div class="kontakt__right" data-reveal="fade-up">
+
+          <div class="form-success" id="form-success" aria-live="polite">
+            <p class="form-success__title">Vielen Dank!</p>
+            <p class="form-success__text">
+              Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.
+            </p>
+          </div>
+
+          <form class="form" id="contact-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-group" id="group-name">
+                <label class="form-label" for="input-name">Ihr Name *</label>
+                <input
+                  type="text"
+                  id="input-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Max Mustermann"
+                  required
+                  autocomplete="name"
+                />
+                <span class="form-error" role="alert">Bitte geben Sie Ihren Namen an.</span>
+              </div>
+              <div class="form-group" id="group-betrieb">
+                <label class="form-label" for="input-betrieb">Ihr Betrieb *</label>
+                <input
+                  type="text"
+                  id="input-betrieb"
+                  name="betrieb"
+                  class="form-input"
+                  placeholder="Mustermann GmbH"
+                  required
+                  autocomplete="organization"
+                />
+                <span class="form-error" role="alert">Bitte geben Sie Ihren Betrieb an.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" id="group-email">
+                <label class="form-label" for="input-email">E-Mail *</label>
+                <input
+                  type="email"
+                  id="input-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="max@mustermann.de"
+                  required
+                  autocomplete="email"
+                />
+                <span class="form-error" role="alert">Bitte geben Sie eine gültige E-Mail-Adresse an.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="input-telefon">Telefon (optional)</label>
+                <input
+                  type="tel"
+                  id="input-telefon"
+                  name="telefon"
+                  class="form-input"
+                  placeholder="040 123 456 78"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="input-nachricht">Ihre Nachricht (optional)</label>
+              <textarea
+                id="input-nachricht"
+                name="nachricht"
+                class="form-textarea"
+                placeholder="Was beschäftigt Sie gerade? Welche Abläufe kosten Sie die meiste Zeit?"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="form-group" id="group-dsgvo">
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="input-dsgvo"
+                  name="dsgvo"
+                  class="form-checkbox"
+                  required
+                />
+                <label class="form-checkbox-label" for="input-dsgvo">
+                  Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen
+                  und bin damit einverstanden, dass meine Daten zur Bearbeitung meiner
+                  Anfrage verarbeitet werden. *
+                </label>
+              </div>
+              <span class="form-error" role="alert">Bitte stimmen Sie der Datenschutzerklärung zu.</span>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Gespräch anfragen
+              <span class="arrow">→</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="footer__logo-top">KI Agentur</div>
+            <div class="footer__logo-bottom">Norderstedt</div>
+          </div>
+          <p class="footer__claim">
+            Für kleine Betriebe.<br>Für die Region Hamburg.
+          </p>
+        </div>
+
+        <nav aria-label="Footer-Navigation">
+          <p class="footer__nav-title">Navigation</p>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="#leistungen" class="footer__nav-link">Leistungen</a></li>
+            <li><a href="#prozess"    class="footer__nav-link">Unser Prozess</a></li>
+            <li><a href="#ueber-uns" class="footer__nav-link">Über uns</a></li>
+            <li><a href="#kontakt"   class="footer__nav-link">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <p class="footer__contact-title">Kontakt</p>
+          <a href="mailto:kontakt@ki-agentur-norderstedt.de" class="footer__contact-email">
+            kontakt@ki-agentur-norderstedt.de
+          </a>
+          <p class="footer__contact-hint">Wir antworten innerhalb von 24 Stunden.</p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 KI Agentur Norderstedt. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal-links">
+          <a href="impressum.html"   class="footer__legal-link">Impressum</a>
+          <a href="datenschutz.html" class="footer__legal-link">Datenschutz</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
